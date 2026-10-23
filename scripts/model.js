@@ -1,7 +1,7 @@
 import CL_vHorario from "./view.js"; //qué flojera aplicar el MCV
 
 var day = new Date().getDay() - 1
-if (day == -1 | day == 5){
+if (day == -1){
     day = 0
 }
 let view = new CL_vHorario()
@@ -23,7 +23,7 @@ document.addEventListener('touchstart', (event) =>{
         day == 0 ? day = 4 : day --
     }else 
     if (x > window.innerWidth*0.75){
-        day == 4? day = 0 : day ++
+        day == 5? day = 0 : day ++
     }
     listDays[day].classList.remove("cel-oculto")
 })
