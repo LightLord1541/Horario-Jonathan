@@ -1,36 +1,24 @@
-body{
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
+body {
   background-color: black;
   color: white;
-}
-h1{
-  margin: 0px;
 }
 p{
   font-size: 1.5vw;
   margin-bottom: 0px;
 }
 header, footer{
-  display: none;
-  font-size: 1.25vw;
   color: #bbb;
 }
 #Título{
-  display: flex;
-  justify-content: space-around;
+  --color-brillo: #ddd;
+  --color-difuso: #999;
   text-shadow: 
-  0 0 5px #ddd,
-  0 0 20px #ddd,
-  0 0 40px #999,
-  0 0 80px #999;
+  0 0 5px var(--color-brillo),
+  0 0 20px var(--color-brillo),
+  0 0 40px var(--color-difuso),
+  0 0 80px var(--color-difuso);
 }
 #Horario {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0.5vh 5vw;
-  font-size: 1.75vw;
   --color-brillo: #ddd;
   --color-difuso: #999;
   text-shadow: 
@@ -40,14 +28,7 @@ header, footer{
   0 0 80px var(--color-difuso);
 }
 .bloque{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 11.5vw;
-  height: 8vh;
-  margin: 5vh 0.5vw;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 15px;
   box-shadow: 
   0 0 5px var(--color-brillo),
@@ -82,17 +63,9 @@ header, footer{
   inset 0 0 10px var(--color-difuso),
   inset 0 0 15px var(--color-difuso);
 }
-.contenido{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-}
-.II {
-  height: 21vh;
-}
-.III{
-  height: 34vh;
+.Cont2{
+  --color-brillo: #6f0;
+  --color-difuso: #170;
 }
 .Sist1{
   --color-birllo: #fc1;
@@ -102,6 +75,10 @@ header, footer{
   --color-brillo: #7ee;
   --color-difuso: #267;
 }
+.Prog1{
+  --color-brillo: #f80;
+  --color-difuso: #500;
+}
 .Prog2{
   --color-brillo: #f69;
   --color-difuso: #634;
@@ -110,30 +87,7 @@ header, footer{
   --color-brillo: #f00;
   --color-difuso: #600;
 }
-/*Hora oculta*/
-#sistemas-lunes:hover + .sisLun {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  #Horario{
-    margin: 0.5vh;
-    font-size: 10vw;
-  }
-  .cel-oculto{
-    display: none;
-  }
-  .colHora{
-    display: none;
-  }
-  .bloque{
-    width: 65vw;
-  }
-  p {
-    font-size: 6vw
-  }
-  header, footer{
-    display: block;
-    font-size: 4vw;
-  }
+.Ingl2{
+  --color-brillo: #d2a;
+  --color-difuso: #525;
 }

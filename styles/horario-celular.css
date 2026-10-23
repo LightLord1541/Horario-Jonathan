@@ -1,0 +1,26 @@
+header, footer{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #Horario{
+    margin: 0.5vh;
+    font-size: 10vw;
+  }
+  .cel-oculto{
+    display: none;
+  }
+  .colHora{
+    display: none;
+  }
+  .bloque{
+    width: 65vw;
+  }
+  p {
+    font-size: 6vw
+  }
+  header, footer{
+    display: block;
+    font-size: 4vw;
+  }
+}
