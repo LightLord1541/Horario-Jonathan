@@ -1,0 +1,144 @@
+body{
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+h1{
+  margin: 0px;
+}
+p{
+  font-size: 1.5vw;
+  margin-bottom: 0px;
+}
+header, footer{
+  display: none;
+  font-size: 1.25vw;
+  color: #bbb;
+}
+#Título{
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 
+  0 0 5px #ddd,
+  0 0 20px #ddd,
+  0 0 40px #999,
+  0 0 80px #999;
+}
+#Horario {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5vh 5vw;
+}
+.bloque{
+  font-size: 1.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11.5vw;
+  height: 8vh;
+  margin: 5vh 0.5vw;
+  border: 1px solid white;
+  border-radius: 15px;
+  --color-brillo: #ddd;
+  --color-difuso: #999;
+  text-shadow: 
+  0 0 5px var(--color-brillo),
+  0 0 20px var(--color-brillo),
+  0 0 40px var(--color-difuso),
+  0 0 80px var(--color-difuso);
+  box-shadow: 
+  0 0 5px var(--color-brillo),
+  0 0 10px var(--color-brillo),
+  0 0 15px var(--color-difuso),
+  0 0 20px var(--color-difuso),
+  inset 0 0 5px var(--color-brillo),
+  inset 0 0 10px var(--color-brillo),
+  inset 0 0 15px var(--color-difuso),
+  inset 0 0 20px var(--color-difuso);
+}
+.hora{
+  border-radius: 10px;
+  --color-brillo: #B7F;
+  --color-difuso: #323;
+}
+.dia{
+  border-radius: 10px;
+  --color-brillo: #0AF;
+  --color-difuso: #125;
+  font-size: 3.5vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6vh;
+}
+.vacio{
+  box-shadow: 
+  0 0 5px var(--color-brillo),
+  0 0 10px var(--color-difuso),
+  0 0 15px var(--color-difuso),
+  inset 0 0 5px var(--color-brillo),
+  inset 0 0 10px var(--color-difuso),
+  inset 0 0 15px var(--color-difuso);
+}
+.contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+.II {
+  height: 21vh;
+}
+.III{
+  height: 34vh;
+}
+.Sist1{
+  --color-birllo: #fc1;
+  --color-difuso: #660;
+}
+.Calc3{
+  --color-brillo: #7ee;
+  --color-difuso: #267;
+}
+.Prog2{
+  --color-brillo: #f69;
+  --color-difuso: #634;
+}
+.Estr2{
+  --color-brillo: #f00;
+  --color-difuso: #600;
+}
+/*Hora oculta*/
+#sistemas-lunes:hover + .sisLun {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .cel-oculto{
+    display: none;
+  }
+  .colHora{
+    display: none;
+  }
+  .bloque{
+    width: 70vw;
+    font-size: 10vw;
+  }
+  p {
+    font-size: 6vw
+  }
+  header, footer{
+    display: block;
+    font-size: 4vw;
+  }
+}
+
+
+/*
+  Hacer los bloques extensos
+  Añadir el texto dentro
+    Cambiarlo al hacer click o al posar el cursor
+  Hacerlo para celulares
+*/
