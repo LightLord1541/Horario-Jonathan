@@ -1,6 +1,9 @@
-import CL_vHorario from "./view.js";
+import CL_vHorario from "./view.js"; //qué flojera aplicar el MCV
 
-const day = new Date().getDay() - 1
+var day = new Date().getDay() - 1
+if (day == -1 | day == 5){
+    day = 0
+}
 let view = new CL_vHorario()
 let listDays = [
         view.lunes, 
@@ -10,9 +13,17 @@ let listDays = [
         view.viernes, 
         view.sabado
     ]
+listDays[day].classList.remove("cel-oculto")
 
-if (day == -1){
-    listDays[0].classList.remove("cel-oculto")
-} else {
+document.addEventListener('touchstart', (event) =>{
+    listDays[day].classList.add("cel-oculto")
+    const pos = event.touches[0]
+    const x = pos.clientX
+    if (x < window.innerWidth*0.25){
+        day == 0 ? day = 4 : day --
+    }else 
+    if (x > window.innerWidth*0.75){
+        day == 4? day = 0 : day ++
+    }
     listDays[day].classList.remove("cel-oculto")
-}
+})

@@ -30,9 +30,16 @@ header, footer{
   justify-content: space-around;
   align-items: center;
   margin: 0.5vh 5vw;
+  font-size: 1.75vw;
+  --color-brillo: #ddd;
+  --color-difuso: #999;
+  text-shadow: 
+  0 0 5px var(--color-brillo),
+  0 0 20px var(--color-brillo),
+  0 0 40px var(--color-difuso),
+  0 0 80px var(--color-difuso);
 }
 .bloque{
-  font-size: 1.75vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,13 +49,6 @@ header, footer{
   margin: 5vh 0.5vw;
   border: 1px solid white;
   border-radius: 15px;
-  --color-brillo: #ddd;
-  --color-difuso: #999;
-  text-shadow: 
-  0 0 5px var(--color-brillo),
-  0 0 20px var(--color-brillo),
-  0 0 40px var(--color-difuso),
-  0 0 80px var(--color-difuso);
   box-shadow: 
   0 0 5px var(--color-brillo),
   0 0 10px var(--color-brillo),
@@ -116,6 +116,10 @@ header, footer{
 }
 
 @media screen and (max-width: 768px) {
+  #Horario{
+    margin: 0.5vh;
+    font-size: 10vw;
+  }
   .cel-oculto{
     display: none;
   }
@@ -123,8 +127,7 @@ header, footer{
     display: none;
   }
   .bloque{
-    width: 70vw;
-    font-size: 10vw;
+    width: 65vw;
   }
   p {
     font-size: 6vw
@@ -134,11 +137,3 @@ header, footer{
     font-size: 4vw;
   }
 }
-
-
-/*
-  Hacer los bloques extensos
-  Añadir el texto dentro
-    Cambiarlo al hacer click o al posar el cursor
-  Hacerlo para celulares
-*/
