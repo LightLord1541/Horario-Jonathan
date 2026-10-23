@@ -20,7 +20,7 @@ document.addEventListener('touchstart', (event) =>{
     const pos = event.touches[0]
     const x = pos.clientX
     if (x < window.innerWidth*0.25){
-        day == 0 ? day = 4 : day --
+        day == 0 ? day = 5 : day --
     }else 
     if (x > window.innerWidth*0.75){
         day == 5? day = 0 : day ++
